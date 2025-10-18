@@ -58,6 +58,16 @@ O backend segue uma arquitetura moderna com:
     ON users
     FOR INSERT
     WITH CHECK (true);
+
+    CREATE POLICY "Allow delete for everyone"
+    ON users
+    FOR DELETE
+    USING (true);
+
+    CREATE POLICY "Allow update for everyone"
+    ON users
+    FOR UPDATE
+    USING (true);
     ```
 
 ### Instalação e Execução (Backend)
