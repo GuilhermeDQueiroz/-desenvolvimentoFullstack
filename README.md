@@ -94,17 +94,6 @@ O backend segue uma arquitetura moderna com:
     ```
     A aplicação será aberta automaticamente no seu navegador em `http://localhost:4200`.
 
-## Screenshots
-
-Para obter as screenshots do frontend funcionando, por favor, siga os passos abaixo:
-
-1.  Certifique-se de que o backend e o frontend estão rodando conforme as instruções acima.
-2.  Abra seu navegador e acesse `http://localhost:4200`.
-3.  Capture as telas da aplicação, mostrando a lista de usuários, o formulário de adição/edição e a funcionalidade de exclusão.
-4.  Adicione as imagens capturadas a este `README.md` ou a uma pasta `screenshots/` no repositório.
-
-**(Adicione suas screenshots aqui)**
-
 ## Considerações Finais
 
 - A entidade utilizada para o CRUD é `users`.
@@ -112,5 +101,3 @@ Para obter as screenshots do frontend funcionando, por favor, siga os passos aba
 - O frontend utiliza tipagens fortes com TypeScript e componentes do Angular Material para uma interface consistente.
 
 ---
-
-**Nota:** Este `README.md` foi gerado automaticamente. Por favor, revise e ajuste conforme necessário.
