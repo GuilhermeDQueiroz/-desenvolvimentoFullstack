@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>{{ data ? 'Editar Usuário' : 'Adicionar Usuário' }}</h2>
+<mat-dialog-content [formGroup]="userForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="name" required>
+    <mat-error *ngIf="userForm.controls['name'].hasError('required')">
+      Nome é obrigatório.
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" type="email" required>
+    <mat-error *ngIf="userForm.controls['email'].hasError('required')">
+      Email é obrigatório.
+    </mat-error>
+    <mat-error *ngIf="userForm.controls['email'].hasError('email')">
+      Email inválido.
+    </mat-error>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="onSave()" [disabled]="userForm.invalid">Salvar</button>
+</mat-dialog-actions>
+
