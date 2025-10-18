@@ -66,7 +66,7 @@ O backend segue uma arquitetura moderna com:
     ```
 3.  Inicie o servidor:
     ```bash
-    npm start # ou node src/index.js
+    ou node src/index.js
     ```
     O servidor estará rodando em `http://localhost:3000`.
 
