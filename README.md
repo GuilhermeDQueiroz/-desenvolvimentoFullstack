@@ -87,6 +87,7 @@ O backend segue uma arquitetura moderna com:
 2.  Instale as dependências:
     ```bash
     npm install
+    npm install -g @angular/cli
     ```
 3.  Inicie o servidor de desenvolvimento:
     ```bash
