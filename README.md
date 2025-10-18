@@ -52,6 +52,12 @@ O backend segue uma arquitetura moderna com:
     CREATE POLICY "Allow authenticated users to insert" ON users FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
     CREATE POLICY "Allow authenticated users to update their own data" ON users FOR UPDATE USING (auth.uid() = id);
     CREATE POLICY "Allow authenticated users to delete their own data" ON users FOR DELETE USING (auth.uid() = id);
+
+    ALTER TABLE users ENABLE ROW LEVEL SECURITY;
+    CREATE POLICY "Allow insert for everyone"
+    ON users
+    FOR INSERT
+    WITH CHECK (true);
     ```
 
 ### Instalação e Execução (Backend)
